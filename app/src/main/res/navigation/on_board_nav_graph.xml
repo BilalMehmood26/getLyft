@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_board_nav_graph"
+    app:startDestination="@id/onBoardingFragment">
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.onBoard.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment3"
+            app:destination="@id/loginFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment3"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.signin.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment3_to_signupFragment3"
+            app:destination="@id/signupFragment3" />
+        <action
+            android:id="@+id/action_loginFragment3_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <argument
+            android:name="role"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment3"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.signup.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment3_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_signupFragment3_to_createProfileFragment"
+            app:destination="@id/createProfileFragment" />
+        <action
+            android:id="@+id/action_signupFragment3_to_createDriverProfileFragment"
+            app:destination="@id/createDriverProfileFragment" />
+        <argument
+            android:name="role"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.verification.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <argument
+            android:name="role"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProfileFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.vendor.createvendorprofile.CreateProfileFragment"
+        android:label="fragment_create_profile"
+        tools:layout="@layout/fragment_create_profile" >
+        <action
+            android:id="@+id/action_createProfileFragment_to_vendorProfileDetailsFragment"
+            app:destination="@id/vendorProfileDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createDriverProfileFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.createDriverProfile.CreateDriverProfileFragment"
+        android:label="fragment_create_driver_profile"
+        tools:layout="@layout/fragment_create_driver_profile" >
+        <action
+            android:id="@+id/action_createDriverProfileFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vendorProfileDetailsFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.vendor.profileDetails.VendorProfileDetailsFragment"
+        android:label="fragment_vendor_profile_details"
+        tools:layout="@layout/fragment_vendor_profile_details" >
+        <action
+            android:id="@+id/action_vendorProfileDetailsFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.password.forgotPassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.usaclean.getlyftd.ui.onboarding.auth.password.resetPassword.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment3"
+            app:destination="@id/loginFragment3" />
+    </fragment>
+</navigation>

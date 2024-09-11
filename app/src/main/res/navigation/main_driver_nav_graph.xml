@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_driver_nav_graph"
+    app:startDestination="@id/driverOrderFragment">
+
+    <fragment
+        android:id="@+id/driverOrderFragment"
+        android:name="com.usaclean.getlyftd.ui.driver.driverOrder.DriverOrderFragment"
+        android:label="fragment_driver_order"
+        tools:layout="@layout/fragment_driver_order" >
+        <action
+            android:id="@+id/action_driverOrderFragment_to_newOrderDetailsFragment"
+            app:destination="@id/newOrderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newOrderDetailsFragment"
+        android:name="com.usaclean.getlyftd.ui.driver.newOrder.NewOrderDetailsFragment"
+        android:label="fragment_new_order_details"
+        tools:layout="@layout/fragment_new_order_details" >
+        <argument
+            android:name="orderType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.usaclean.getlyftd.ui.driver.wallet.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/editDriverProfileFragment"
+        android:name="com.usaclean.getlyftd.ui.driver.profile.editProfile.EditDriverProfileFragment"
+        android:label="fragment_edit_driver_profile"
+        tools:layout="@layout/fragment_edit_driver_profile" />
+    <fragment
+        android:id="@+id/contactUsFragment2"
+        android:name="com.usaclean.getlyftd.customer.profile.contactus.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/bankingInfoFragment2"
+        android:name="com.usaclean.getlyftd.customer.profile.bankingInfo.BankingInfoFragment"
+        android:label="fragment_banking_info"
+        tools:layout="@layout/fragment_banking_info" />
+    <fragment
+        android:id="@+id/driverPRofileFragment"
+        android:name="com.usaclean.getlyftd.ui.driver.profile.account.DriverPRofileFragment"
+        android:label="fragment_driver_p_rofile"
+        tools:layout="@layout/fragment_driver_p_rofile" >
+        <action
+            android:id="@+id/action_driverPRofileFragment_to_editDriverProfileFragment"
+            app:destination="@id/editDriverProfileFragment" />
+        <action
+            android:id="@+id/action_driverPRofileFragment_to_bankingInfoFragment2"
+            app:destination="@id/bankingInfoFragment2" />
+        <action
+            android:id="@+id/action_driverPRofileFragment_to_contactUsFragment2"
+            app:destination="@id/contactUsFragment2" />
+    </fragment>
+</navigation>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.usaclean.getlyftd.customer.profile.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+
+        <action
+            android:id="@+id/action_accountFragment_to_bankingInfoFragment"
+            app:destination="@id/bankingInfoFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.usaclean.getlyftd.customer.profile.editProfile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/bankingInfoFragment"
+        android:name="com.usaclean.getlyftd.customer.profile.bankingInfo.BankingInfoFragment"
+        android:label="fragment_banking_info"
+        tools:layout="@layout/fragment_banking_info" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.usaclean.getlyftd.customer.shop.shopList.ShopFragment"
+        android:label="fragment_shope"
+        tools:layout="@layout/fragment_shope" >
+        <action
+            android:id="@+id/action_shopFragment_to_shopDetailsFragment"
+            app:destination="@id/shopDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopDetailsFragment"
+        android:name="com.usaclean.getlyftd.customer.shop.shopDetails.ShopDetailsFragment"
+        android:label="fragment_shop_details"
+        tools:layout="@layout/fragment_shop_details" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.usaclean.getlyftd.customer.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.usaclean.getlyftd.customer.productDetails.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <action
+            android:id="@+id/action_productDetailsFragment_to_shopDetailsFragment"
+            app:destination="@id/shopDetailsFragment" />
+        <action
+            android:id="@+id/action_productDetailsFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.usaclean.getlyftd.customer.cart.addToCart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_cartAddressFragment"
+            app:destination="@id/cartAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartAddressFragment"
+        android:name="com.usaclean.getlyftd.customer.cart.cartAddress.CartAddressFragment"
+        android:label="fragment_cart_address"
+        tools:layout="@layout/fragment_cart_address" >
+        <action
+            android:id="@+id/action_cartAddressFragment_to_newAddressFragment"
+            app:destination="@id/newAddressFragment" />
+        <action
+            android:id="@+id/action_cartAddressFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAddressFragment"
+        android:name="com.usaclean.getlyftd.customer.cart.newAddress.NewAddressFragment"
+        android:label="fragment_new_address"
+        tools:layout="@layout/fragment_new_address" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.usaclean.getlyftd.customer.cart.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.usaclean.getlyftd.customer.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_orderFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.usaclean.getlyftd.customer.profile.contactus.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.usaclean.getlyftd.customer.order.orderDetail.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" >
+        <action
+            android:id="@+id/action_orderDetailsFragment_to_trackOrderFragment"
+            app:destination="@id/trackOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackOrderFragment"
+        android:name="com.usaclean.getlyftd.customer.order.trackOrder.TrackOrderFragment"
+        android:label="fragment_track_order"
+        tools:layout="@layout/fragment_track_order" />
+</navigation>

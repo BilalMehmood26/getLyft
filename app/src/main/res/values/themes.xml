@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GetLyftd" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/main_green</item>
+    </style>
+
+    <style name="Theme.GetLyftd" parent="Base.Theme.GetLyftd" />
+
+    <style name="DialogBox" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/BottomSheetD</item>
+        <item name="colorPrimary">@color/main_green</item>
+
+    </style>
+
+    <style name="BottomSheetD" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@android:color/transparent</item>
+    </style>
+</resources>

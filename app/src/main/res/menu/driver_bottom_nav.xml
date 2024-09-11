@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/driverOrderFragment"
+        android:title="Orders"
+        android:enabled="true"
+        android:icon="@drawable/order_selector"/>
+
+    <item
+        android:id="@+id/walletFragment"
+        android:title="Wallet"
+        android:enabled="true"
+        android:icon="@drawable/wallet_selector"/>
+    <item
+        android:id="@+id/driverPRofileFragment"
+        android:title="Profile"
+        android:enabled="true"
+        android:icon="@drawable/account_selector"/>
+</menu>

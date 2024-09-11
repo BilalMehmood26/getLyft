@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/vendorOrderFragment"
+        android:title="Order"
+        android:enabled="true"
+        android:icon="@drawable/order_selector"/>
+
+    <item
+        android:id="@+id/vendorsProductsFragment"
+        android:title="Products"
+        android:enabled="true"
+        android:icon="@drawable/store_selector"/>
+    <item
+        android:id="@+id/walletFragment2"
+        android:title="Wallet"
+        android:enabled="true"
+        android:icon="@drawable/wallet_selector"/>
+    <item
+        android:id="@+id/venderProfileFragment"
+        android:title="PRofile"
+        android:enabled="true"
+        android:icon="@drawable/account_selector"/>
+</menu>

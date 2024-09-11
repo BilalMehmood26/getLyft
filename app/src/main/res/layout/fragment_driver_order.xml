@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.driver.driverOrder.DriverOrderFragment">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/orders"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/edit_btn"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/new_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="New"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/running_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:strokeColor="@color/main_green"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/running_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Running"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/completed_btn"
+        app:layout_constraintStart_toEndOf="@+id/new_btn"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/completed_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Completed"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_10ssp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/running_btn"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_order_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/running_btn"
+        tools:listitem="@layout/item_new_order" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/running_order_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/running_btn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/complete_order_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/running_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Get Lyftd</string>
+    <string name="get_lyft_d">Get Lyft’d</string>
+    <string name="sub_heading"><![CDATA[CBD & Tobacco Marketplace, \nSame-Day delivery]]></string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+    </string>
+    <string name="sign_up">Sign up</string>
+    <string name="please_select_the_required_option">Please select the required option</string>
+    <string name="customer">Customer</string>
+    <string name="customer_sub_heading"><![CDATA[Sign up to have access to our vast marketplace of CBD & Tobacco goods]]></string>
+    <string name="driver">Driver</string>
+    <string name="driver_sub_heading">Sign up to become a trusted Get Lyft’d driver</string>
+    <string name="vendor">Vendor</string>
+    <string name="vendor_sub_heading">Sign up to partner with Get Lyft’d</string>
+    <string name="let_s_get_started">Let\'s get started</string>
+    <string name="enter_your_details_to_register_with_us">Enter your details to register with us.</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_under_line"><u>Sign In</u></string>
+    <string name="sign_up_under_line"><u>Sign Up</u></string>
+    <string name="term_cuation">By signing up, you agree to \nour Terms of Use and Privacy Policy</string>
+    <string name="login">Login</string>
+    <string name="enter_your_login_details_to_access_your_account">Enter your Login details to\n access your account</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="forgot_password_without_u">Forgot Password</string>
+    <string name="or_continue_with">Or Continue with</string>
+    <string name="verification">Verification</string>
+    <string name="verification_sub_heading">Please enter the 4 digit code sent to \nyour phone number</string>
+    <string name="resend_code">Resend code in</string>
+    <string name="submit">Submit</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="enter_details">Enter your details here</string>
+    <string name="store_name">Store name</string>
+    <string name="location">Location</string>
+    <string name="continue_text">Continue</string>
+    <string name="add_store_images">Add Store Images</string>
+    <string name="upload_more_photos">Upload More Photos</string>
+    <string name="please_upload_a_clear_photo_of_yourself">Please upload a CLEAR photo of yourself</string>
+    <string name="driver_license_number">Driver License-Number</string>
+    <string name="car_color">Car Color</string>
+    <string name="license_plate_number">License Plate Number</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="front_page">Front Page</string>
+    <string name="back_page">Back Page</string>
+    <string name="forgot_password_sub_heading">Enter your email address associated \nwith your account</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_the_new_password">Enter the new password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="my_account">My Account</string>
+    <string name="place_holder_name">Amanda Dexter</string>
+    <string name="email_place_holder">amandadexter23@gmail.com</string>
+    <string name="change_password">Change Password</string>
+    <string name="term_and_conditions">Term And Conditions</string>
+    <string name="banking_information">Banking Information</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="surname">Surname</string>
+    <string name="place_holder_phone">+48 458 458 4589</string>
+    <string name="update">Update</string>
+    <string name="call_us">Call Us</string>
+    <string name="email_address">Email Address</string>
+    <string name="store_address">Store Address</string>
+    <string name="store_place_holder">ul. Dubrownicka 130, Wrocław, Poland 51-208</string>
+    <string name="our_social_media">Our Social Media</string>
+    <string name="credit_debit_card">Credit / Debit Card</string>
+    <string name="_8256">**** 8256</string>
+    <string name="_05_25">05/25</string>
+    <string name="other">Other</string>
+    <string name="net_banking">Net banking</string>
+    <string name="shops">Shops</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_address_place_holder">Shop no- 345, United State of America</string>
+    <string name="cannabis_oil">Cannabis Oil</string>
+    <string name="home">Home</string>
+    <string name="recommended_products">Recommended products</string>
+    <string name="new_products">New products</string>
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="taxes">Taxes</string>
+    <string name="use_loyalty_points">Use Loyalty Points</string>
+    <string name="add_new_address">Add New Address</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="place_order">Place Order</string>
+    <string name="cancel">Cancel</string>
+    <string name="track">Track</string>
+    <string name="cancel_order"><u>Cancel Order</u></string>
+    <string name="orders">Orders</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="start">Start</string>
+    <string name="complete">Complete</string>
+    <string name="wallet">Wallet</string>
+    <string name="current_wallet_total">Current Wallet Total</string>
+    <string name="_500_1000">500-1000$</string>
+    <string name="apply">Apply</string>
+    <string name="loyality_point"><![CDATA[1,000 points - $5 Dollars off total order \n1,500 points - Free Priority Delivery \n2,000 points - Free delivery \n3,000 points - $10 Dollars off total order \n3,500 points - $10 Dollars off & free delivery]]></string>
+    <string name="order_successfully_msg">We’ve recieved your order successfully. we’ll \nemail you an order confirmation</string>
+    <string name="cancelled_payment_msg">Your order will be cancelled and payment \nwill be returned to you</string>
+    <string name="logout">Logout</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="assign_driver">Assign Driver</string>
+
+    <array name="rangeSlider">
+        <item>1000</item>
+        <item>3000</item>
+    </array>
+</resources>

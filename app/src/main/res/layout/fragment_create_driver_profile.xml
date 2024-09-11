@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".onboarding.auth.createDriverProfile.CreateDriverProfileFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/rasa_medium"
+        android:text="@string/get_lyft_d"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_38ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_17sdp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/create_profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/enter_details"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/amaranth_regular"
+                android:text="Add profile picture"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:background="@drawable/dash_bg"
+                app:layout_constraintEnd_toEndOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="@dimen/_30sdp"
+                android:src="@drawable/ic_doc"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/please_upload_a_clear_photo_of_yourself"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/driver_license_number"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_45sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:src="@drawable/ic_license_plate"
+                app:layout_constraintBottom_toBottomOf="@+id/phone_et"
+                app:layout_constraintStart_toStartOf="@+id/phone_et"
+                app:layout_constraintTop_toTopOf="@+id/phone_et" />
+
+
+            <EditText
+                android:id="@+id/car_color_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/car_color"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_45sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_et" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:src="@drawable/ic_color"
+                app:layout_constraintBottom_toBottomOf="@+id/car_color_et"
+                app:layout_constraintStart_toStartOf="@+id/car_color_et"
+                app:layout_constraintTop_toTopOf="@+id/car_color_et" />
+
+
+            <EditText
+                android:id="@+id/license_plate_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/license_plate_number"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_45sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/car_color_et" />
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:src="@drawable/ic_add_car"
+                app:layout_constraintBottom_toBottomOf="@+id/license_plate_et"
+                app:layout_constraintStart_toStartOf="@+id/license_plate_et"
+                app:layout_constraintTop_toTopOf="@+id/license_plate_et" />
+
+            <EditText
+                android:id="@+id/car_make_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/make"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_45sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@+id/car_model_et"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/license_plate_et" />
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:src="@drawable/ic_add_car"
+                app:layout_constraintBottom_toBottomOf="@+id/car_make_et"
+                app:layout_constraintStart_toStartOf="@+id/car_make_et"
+                app:layout_constraintTop_toTopOf="@+id/car_make_et" />
+
+            <EditText
+                android:id="@+id/car_model_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/model"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_45sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/car_make_et"
+                app:layout_constraintTop_toBottomOf="@+id/license_plate_et" />
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:src="@drawable/ic_add_car"
+                app:layout_constraintBottom_toBottomOf="@+id/car_model_et"
+                app:layout_constraintStart_toStartOf="@+id/car_model_et"
+                app:layout_constraintTop_toTopOf="@+id/car_model_et" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17ssp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Driving License"
+                android:textColor="@color/wood_black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/car_make_et"
+                app:layout_constraintTop_toBottomOf="@+id/car_make_et" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/front_page"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_17sdp"
+                app:layout_constraintStart_toStartOf="@+id/car_make_et"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/back_page"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/back_iv"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_12ssp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/upload_corner_bg"
+                app:layout_constraintEnd_toStartOf="@+id/back_iv"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <View
+                android:id="@+id/back_iv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_12ssp"
+                android:background="@drawable/upload_corner_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <ImageView
+                android:id="@+id/upload_front_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload"
+                app:layout_constraintBottom_toBottomOf="@+id/view3"
+                app:layout_constraintEnd_toEndOf="@+id/view3"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="@+id/view3" />
+
+            <ImageView
+                android:id="@+id/upload_back_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload"
+                app:layout_constraintBottom_toBottomOf="@+id/back_iv"
+                app:layout_constraintEnd_toEndOf="@+id/back_iv"
+                app:layout_constraintStart_toStartOf="@+id/back_iv"
+                app:layout_constraintTop_toTopOf="@+id/back_iv" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/continue_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:backgroundTint="@color/main_green"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/continue_text"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="@+id/back_iv"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@+id/back_iv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

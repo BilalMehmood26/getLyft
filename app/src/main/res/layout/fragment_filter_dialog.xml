@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".customer.home.FilterDialogFragment">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Filter"
+        android:textStyle="bold"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <CheckBox
+        android:id="@+id/cat_one"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cat_one_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 1"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_one"
+        app:layout_constraintStart_toEndOf="@+id/cat_one"
+        app:layout_constraintTop_toTopOf="@+id/cat_one" />
+
+    <CheckBox
+        android:id="@+id/cat_two"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/cat_one_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cat_two_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 2"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_two"
+        app:layout_constraintStart_toEndOf="@+id/cat_two"
+        app:layout_constraintTop_toTopOf="@+id/cat_two" />
+
+    <CheckBox
+        android:id="@+id/cat_three"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/cat_two_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cat_three_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 3"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cat_three"
+        app:layout_constraintTop_toTopOf="@+id/cat_three" />
+
+
+    <CheckBox
+        android:id="@+id/cat_four"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/cat_one" />
+
+    <TextView
+        android:id="@+id/cat_four_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 4"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_four"
+        app:layout_constraintStart_toEndOf="@+id/cat_four"
+        app:layout_constraintTop_toTopOf="@+id/cat_four" />
+
+    <CheckBox
+        android:id="@+id/cat_five"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_four_tv"
+        app:layout_constraintStart_toEndOf="@+id/cat_four_tv"
+        app:layout_constraintTop_toTopOf="@+id/cat_four_tv" />
+
+    <TextView
+        android:id="@+id/cat_five_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 5"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_five"
+        app:layout_constraintStart_toEndOf="@+id/cat_five"
+        app:layout_constraintTop_toTopOf="@+id/cat_five" />
+
+    <CheckBox
+        android:id="@+id/cat_six"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/cat_two_tv"
+        app:layout_constraintTop_toTopOf="@+id/cat_five_tv" />
+
+    <TextView
+        android:id="@+id/cat_six_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Category 6"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_six"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cat_six"
+        app:layout_constraintTop_toTopOf="@+id/cat_six" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:background="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat_five" />
+
+    <TextView
+        android:id="@+id/rating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ratings"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+    <CheckBox
+        android:id="@+id/rat_one"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@+id/rating_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rating_tv" />
+
+    <TextView
+        android:id="@+id/rat_one_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="5 Star"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_one"
+        app:layout_constraintStart_toEndOf="@+id/rat_one"
+        app:layout_constraintTop_toTopOf="@+id/rat_one" />
+
+    <CheckBox
+        android:id="@+id/rat_two"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/rat_one_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rating_tv" />
+
+    <TextView
+        android:id="@+id/rat_two_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="4 Star"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_two"
+        app:layout_constraintStart_toEndOf="@+id/rat_two"
+        app:layout_constraintTop_toTopOf="@+id/rat_two" />
+
+    <CheckBox
+        android:id="@+id/rat_three"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/rat_two_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rating_tv" />
+
+    <TextView
+        android:id="@+id/rat_three_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="3 Star"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_three"
+        app:layout_constraintStart_toEndOf="@+id/rat_three"
+        app:layout_constraintTop_toTopOf="@+id/rat_three" />
+
+
+    <CheckBox
+        android:id="@+id/rat_four"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@+id/rating_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rat_one" />
+
+    <TextView
+        android:id="@+id/rat_four_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="2 star"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_four"
+        app:layout_constraintStart_toEndOf="@+id/rat_four"
+        app:layout_constraintTop_toTopOf="@+id/rat_four" />
+
+    <CheckBox
+        android:id="@+id/rat_five"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_four_tv"
+        app:layout_constraintStart_toEndOf="@+id/rat_four_tv"
+        app:layout_constraintTop_toTopOf="@+id/rat_four_tv" />
+
+    <TextView
+        android:id="@+id/rat_five_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1 Star"
+        android:textColor="@color/wood_black"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/rat_five"
+        app:layout_constraintStart_toEndOf="@+id/rat_five"
+        app:layout_constraintTop_toTopOf="@+id/rat_five" />
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:background="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rat_five" />
+
+    <TextView
+        android:id="@+id/price_range_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Price Range"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:textColor="@color/wood_black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+    <TextView
+        android:id="@+id/price_range__hinttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/_500_1000"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rangeSlider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="5000"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintStart_toStartOf="@+id/price_range_tv"
+        app:layout_constraintTop_toBottomOf="@+id/price_range_tv"
+        app:values="@array/rangeSlider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="0"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/rangeSlider"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSlider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="5000$"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/rangeSlider"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSlider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:backgroundTint="@color/main_green"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/apply"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginBottom="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
